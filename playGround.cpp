@@ -20,7 +20,7 @@ HRESULT playGround::init()
 	IMAGEMANAGER->addFrameImage("battle", "battle.bmp", 0, 0, 1536, 79, 16, 1, true, RGB(255, 0, 255));
 	IMAGEMANAGER->addFrameImage("¹öÆ°", "button.bmp", 0, 0, 122, 62, 1, 2, true, RGB(255, 0, 255));
 	IMAGEMANAGER->addImage("ÃÑ¾Ë", "bullet.bmp", 21, 21, true, RGB(255, 0, 255));
-
+	
 
 
 	SCENEMANAGER->addScene("°í½ºÆ®¾À", new ghostNGoblinScene);
@@ -54,8 +54,8 @@ void playGround::render()
 	IMAGEMANAGER->findImage("¹è°æ")->render(getMemDC());
 	
 	SCENEMANAGER->render();
-
-	TIMEMANAGER->render(getMemDC());
+	//dsdasdsad
+//	TIMEMANAGER->render(getMemDC());
 	
 	//=============================================
 	_backBuffer->render(getHDC(), 0, 0);
